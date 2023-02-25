@@ -1,0 +1,43 @@
+body, html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #FDFFAB;
+}
+
+.note {
+  width: 300px;
+  height: 300px;
+}
+
+.note__drag {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 20px;
+  width: 100%;
+
+  -webkit-app-region: drag;
+}
+
+.note__body {
+  margin: 20px 24px 0 24px;
+
+  width: calc(300px - 24px - 24px);
+  height: calc(300px - 20px);
+
+  background: none;
+  border: none;
+  outline: none;
+
+  color: black;
+
+  font-family: 'Segoe UI';
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.note__body::placeholder { color: rgba(0, 0, 0, 0.4) }
+.note__body::-webkit-scrollbar { width: 0 }
